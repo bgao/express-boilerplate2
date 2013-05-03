@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  .container
+    .row-fluid
+      .span8
+        - if (typeof user !== 'undefined')
+          p You are currently logged in as #{user.email}
+        - else
+          p Please login first
+
+      .span4
+        p side bar
+

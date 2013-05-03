@@ -1,0 +1,14 @@
+extends layout
+
+block content
+
+	include account
+	include modals/alert
+	include modals/confirm
+
+block scripts
+	script(src='//cdnjs.cloudflare.com/ajax/libs/jquery.form/3.24/jquery.form.js')
+	script(src='//cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.1.0/bootstrap-modal.pack.js')
+	script(src='/js/views/home.js')
+	script(src='/js/controllers/homeController.js')
+	script(src='/js/form-validators/accountValidator.js')
